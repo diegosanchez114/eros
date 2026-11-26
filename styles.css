@@ -1,0 +1,75 @@
+
+/* Contenedor principal */
+.contenedor-principal {
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e7eb;
+}
+
+/* Título */
+.contenedor-principal h2 {
+    text-align: center;
+    color: #1f2937;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+/* Contenedor individual de cada campo */
+.contenedor-campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/* Etiquetas */
+.contenedor-campo label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 8px;
+}
+
+/* Listas desplegables */
+.contenedor-campo select {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 15px;
+    color: #374151;
+    background-color: #f9fafb;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.contenedor-campo select:hover {
+    border-color: #2563eb;
+}
+
+/* Efecto al seleccionar */
+.contenedor-campo select:focus {
+    border-color: #2563eb;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Campo deshabilitado */
+.contenedor-campo select:disabled {
+    background-color: #e5e7eb;
+    color: #9ca3af;
+    cursor: not-allowed;
+}
+
+/* Adaptación a celulares */
+@media (max-width: 600px) {
+    .contenedor-principal {
+        margin: 20px 10px;
+        padding: 20px;
+    }
+}
